@@ -124,7 +124,7 @@ footer > img {
 }
 
 #spacer {
-  width: 5%;
+  width: 2rem;
 }
 
 @media screen and (max-width: 768px) {
