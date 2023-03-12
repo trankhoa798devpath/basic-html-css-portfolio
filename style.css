@@ -1,0 +1,156 @@
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+* {
+  padding: 0;
+}
+
+body {
+  background-color: lightgray;
+  padding: 2vh 5vw;
+  margin: 0;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 30%;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 2rem;
+}
+
+ul {
+  display: grid;
+  list-style: none;
+  text-align: center;
+  justify-content: space-evenly;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(4, auto);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+
+a:hover {
+  color: lightsalmon;
+}
+
+a:active {
+  color: darkslategray;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.row:first-of-type {
+  background: rgba(0, 0, 0, 0.7) url("assets/grill.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  padding: 2rem;
+  color: white;
+  border-radius: 2rem;
+  margin-bottom: 2vh;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.row:last-of-type {
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  justify-content: space-between;
+  grid-template-areas: "article article article";
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+article {
+  text-align: justify;
+}
+
+.col-xl-4 {
+  background-color: rgb(255, 180, 150);
+  grid-area: "article";
+  padding: 2rem;
+  border-radius: 2rem;
+  margin-bottom: 2vh;
+}
+
+.col-xl-4 a {
+  all: revert;
+}
+
+.col-xl-4 img {
+  all: revert;
+  width: 100%;
+  height: 35vh;
+}
+
+#hour-list {
+  display: unset;
+  text-align: left;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer > img {
+  width: 5%;
+  margin: unset;
+}
+
+#spacer {
+  width: 5%;
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    width: 60%;
+  }
+
+  ul {
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .row:last-of-type {
+    display: unset;
+  }
+
+  .col-md-12 {
+    margin: 2vh 0;
+  }
+
+  .col-xl-4 img {
+    all: revert;
+    width: 100%;
+  }
+
+  footer > img {
+    width: 10%;
+  }
+}
