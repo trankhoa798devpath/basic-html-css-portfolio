@@ -127,6 +127,21 @@ footer > img {
   width: 2rem;
 }
 
+@media screen and (max-width: 1028px) {
+  .row:last-of-type {
+    display: unset;
+  }
+
+  .col-md-12 {
+    margin: 2vh 0;
+  }
+
+  .col-md-12 img {
+    all: revert;
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   img {
     width: 60%;
