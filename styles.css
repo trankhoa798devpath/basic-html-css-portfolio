@@ -57,6 +57,10 @@ a:active {
   grid-template-rows: auto;
 }
 
+.row {
+  margin-bottom: 2vh;
+}
+
 .row:first-of-type {
   background: rgba(0, 0, 0, 0.7) url("assets/grill.jpeg");
   background-repeat: no-repeat;
@@ -66,7 +70,6 @@ a:active {
   padding: 2rem;
   color: white;
   border-radius: 2rem;
-  margin-bottom: 2vh;
 }
 
 h1 {
@@ -94,7 +97,6 @@ article {
   grid-area: "article";
   padding: 2rem;
   border-radius: 2rem;
-  margin-bottom: 2vh;
 }
 
 .col-xl-4 a {
